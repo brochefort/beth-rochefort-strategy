@@ -4,9 +4,7 @@ import { motion } from "framer-motion";
 import headshot from "@/assets/headshot.png";
 
 const taglines = [
-  "Good process, good people, good outcomes",
   "Where messy stakeholders become aligned teams",
-  "Operational excellence with a human touch",
   "Strategic thinking, hands-on execution, genuine relationships",
 ];
 
