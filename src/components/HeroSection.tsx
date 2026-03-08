@@ -69,7 +69,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.55 }}
-          className="flex flex-wrap justify-center md:justify-start gap-3 mb-10"
+          className="flex flex-wrap justify-center md:justify-start gap-3"
         >
           {taglines.map((t) => (
             <span
@@ -79,23 +79,6 @@ const HeroSection = () => {
               {t}
             </span>
           ))}
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-        >
-          <a
-            href="https://www.linkedin.com/in/bethrochefort/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button size="lg" className="gap-2 text-base">
-              <Linkedin className="h-5 w-5" />
-              Connect on LinkedIn
-            </Button>
-          </a>
         </motion.div>
         </div>
       </div>
