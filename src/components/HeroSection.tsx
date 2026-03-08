@@ -16,7 +16,20 @@ const HeroSection = () => {
       id="hero"
       className="min-h-[90vh] flex items-center justify-center pt-16"
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col md:flex-row items-center gap-10">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="shrink-0"
+        >
+          <img
+            src={headshot}
+            alt="Beth Rochefort"
+            className="w-48 h-56 md:w-56 md:h-64 object-cover rounded-lg shadow-md"
+          />
+        </motion.div>
+        <div className="text-center md:text-left">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
