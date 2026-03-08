@@ -121,12 +121,6 @@ const Contact = () => {
                 LinkedIn
               </Button>
             </a>
-            <a href="mailto:beth.rochefort@gmail.com">
-              <Button variant="outline" className="gap-2">
-                <Mail className="h-4 w-4" />
-                beth.rochefort@gmail.com
-              </Button>
-            </a>
           </div>
         </motion.div>
       </div>
