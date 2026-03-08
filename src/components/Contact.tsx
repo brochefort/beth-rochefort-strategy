@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
+import bethLogo from "@/assets/bethgraphic.png";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
