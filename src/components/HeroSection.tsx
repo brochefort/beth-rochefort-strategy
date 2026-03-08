@@ -1,6 +1,5 @@
 import { MapPin } from "lucide-react";
 import { motion } from "framer-motion";
-import { motion } from "framer-motion";
 import headshot from "@/assets/headshot.png";
 
 const taglines = [
