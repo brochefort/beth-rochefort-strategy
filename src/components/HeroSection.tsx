@@ -1,6 +1,7 @@
 import { Linkedin, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import headshot from "@/assets/headshot.png";
 
 const taglines = [
   "Good process, good people, good outcomes",
