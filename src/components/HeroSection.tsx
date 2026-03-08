@@ -1,6 +1,7 @@
 import { Linkedin, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import headshot from "@/assets/headshot.png";
 
 const taglines = [
   "Good process, good people, good outcomes",
@@ -15,7 +16,20 @@ const HeroSection = () => {
       id="hero"
       className="min-h-[90vh] flex items-center justify-center pt-16"
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col md:flex-row items-center gap-10">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="shrink-0"
+        >
+          <img
+            src={headshot}
+            alt="Beth Rochefort"
+            className="w-48 h-56 md:w-56 md:h-64 object-cover rounded-lg shadow-md"
+          />
+        </motion.div>
+        <div className="text-center md:text-left">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -38,7 +52,7 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex items-center justify-center gap-1 text-muted-foreground mb-8"
+          className="flex items-center justify-center md:justify-start gap-1 text-muted-foreground mb-8"
         >
           <MapPin className="h-4 w-4" />
           <span className="text-sm">Watertown, MA</span>
@@ -57,7 +71,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.55 }}
-          className="flex flex-wrap justify-center gap-3 mb-10"
+          className="flex flex-wrap justify-center md:justify-start gap-3 mb-10"
         >
           {taglines.map((t) => (
             <span
@@ -85,6 +99,7 @@ const HeroSection = () => {
             </Button>
           </a>
         </motion.div>
+        </div>
       </div>
     </section>
   );

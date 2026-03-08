@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { z } from "zod";
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
+import bethLogo from "@/assets/bethgraphic.png";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
@@ -54,6 +55,9 @@ const Contact = () => {
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.5 }}
         >
+          <div className="flex justify-center mb-6">
+            <img src={bethLogo} alt="Beth Rochefort logo" className="h-24 w-auto" />
+          </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">
             Get In Touch
           </h2>
@@ -114,12 +118,6 @@ const Contact = () => {
               <Button variant="outline" className="gap-2">
                 <Linkedin className="h-4 w-4" />
                 LinkedIn
-              </Button>
-            </a>
-            <a href="mailto:beth.rochefort@gmail.com">
-              <Button variant="outline" className="gap-2">
-                <Mail className="h-4 w-4" />
-                beth.rochefort@gmail.com
               </Button>
             </a>
           </div>
