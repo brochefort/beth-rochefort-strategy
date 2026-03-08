@@ -52,7 +52,7 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex items-center justify-center gap-1 text-muted-foreground mb-8"
+          className="flex items-center justify-center md:justify-start gap-1 text-muted-foreground mb-8"
         >
           <MapPin className="h-4 w-4" />
           <span className="text-sm">Watertown, MA</span>
