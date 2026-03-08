@@ -61,7 +61,6 @@ const Contact = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">
             Get In Touch
           </h2>
-          </h2>
           <p className="text-center text-muted-foreground mb-10">
             Interested in working together? Drop me a line.
           </p>
