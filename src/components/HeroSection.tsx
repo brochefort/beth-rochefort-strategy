@@ -99,6 +99,7 @@ const HeroSection = () => {
             </Button>
           </a>
         </motion.div>
+        </div>
       </div>
     </section>
   );
