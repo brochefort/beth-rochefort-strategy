@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="min-h-[90vh] flex items-center justify-center pt-16"
+      className="flex items-center justify-center pt-16"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col md:flex-row items-start gap-10">
         <motion.div
