@@ -6,7 +6,7 @@ const Portfolio = () => (
   <section id="portfolio" className="py-20 lg:py-28 bg-muted/50">
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">
-        Case Studies
+        Portfolio
       </h2>
       <p className="text-center text-muted-foreground mb-14">
         Detailed project stories in progress. Check back soon.
