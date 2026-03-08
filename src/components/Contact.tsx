@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { z } from "zod";
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
