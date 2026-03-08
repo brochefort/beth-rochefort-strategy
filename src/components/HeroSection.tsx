@@ -1,5 +1,4 @@
-import { Linkedin, MapPin } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import headshot from "@/assets/headshot.png";
 
@@ -12,7 +11,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="min-h-[90vh] flex items-center justify-center pt-16"
+      className="flex items-center justify-center pt-16"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col md:flex-row items-start gap-10">
         <motion.div
@@ -69,7 +68,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.55 }}
-          className="flex flex-wrap justify-center md:justify-start gap-3 mb-10"
+          className="flex flex-wrap justify-center md:justify-start gap-3"
         >
           {taglines.map((t) => (
             <span
@@ -79,23 +78,6 @@ const HeroSection = () => {
               {t}
             </span>
           ))}
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-        >
-          <a
-            href="https://www.linkedin.com/in/bethrochefort/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button size="lg" className="gap-2 text-base">
-              <Linkedin className="h-5 w-5" />
-              Connect on LinkedIn
-            </Button>
-          </a>
         </motion.div>
         </div>
       </div>
