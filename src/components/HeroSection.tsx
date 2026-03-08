@@ -1,5 +1,5 @@
-import { Linkedin, MapPin } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { MapPin } from "lucide-react";
+import { motion } from "framer-motion";
 import { motion } from "framer-motion";
 import headshot from "@/assets/headshot.png";
 
