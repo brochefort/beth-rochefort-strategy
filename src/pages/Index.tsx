@@ -1,13 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import WhatIDo from "@/components/WhatIDo";
+import Perspective from "@/components/Perspective";
+import WorkingOn from "@/components/WorkingOn";
+import CareerHighlights from "@/components/CareerHighlights";
+import WhatDidntWork from "@/components/WhatDidntWork";
+import Portfolio from "@/components/Portfolio";
+import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Navigation />
+      <main>
+        <HeroSection />
+        <WhatIDo />
+        <Perspective />
+        <WorkingOn />
+        <CareerHighlights />
+        <WhatDidntWork />
+        <Portfolio />
+        <Contact />
+      </main>
+      <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border">
+        © {new Date().getFullYear()} Beth Rochefort. All rights reserved.
+      </footer>
+    </>
   );
 };
 
